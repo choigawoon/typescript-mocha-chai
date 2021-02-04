@@ -1,4 +1,4 @@
-export { Stack } from './Stack';
+export { Stack } from './stack';
 
 const express = require("express")
 const bodyParser = require("body-parser")
@@ -27,7 +27,7 @@ app.get('/version', (req, res) => {
 app.post('/event', (req, res) => {
   console.log('/event');
   console.log(req);
-  console.log(res);
+  console.log(res.body);
 });
 
 // Start express on the defined port
